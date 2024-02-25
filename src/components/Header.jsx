@@ -12,7 +12,7 @@ const Header = () => {
           <ul className="flex space-x-4">
             <li><a href="/" className="hover:text-gray-300">Home</a></li>
             <li><a href="/products" className="hover:text-gray-300">Products</a></li>
-            <li><a href="/products" className="hover:text-gray-300">Add Product</a></li>
+            <li><a href="/products/add" className="hover:text-gray-300">Add Product</a></li>
             <li className="relative">
               <Link to="/cart" className=" hover:text-gray-300">Cart</Link>
               {

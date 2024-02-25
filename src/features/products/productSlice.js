@@ -15,20 +15,10 @@ const productSlice = createSlice(
       deleteProducts (state, action) {
         const deleteProduct = state.Product.filter(prod => prod.id !== action.payload)
         return {...state, Product:deleteProduct}
-      },
-      updateProducts (state, action) {
-        const updateProduct = state.Product.find(prod => prod.id === action.payload.id)
-        if (updateProduct) {
-          updateProduct.name = action.payload.name
-          updateProduct.brand = action.payload.brand
-          updateProduct.price = action.payload.price
-          updateProduct.description = action.payload.description
-          updateProduct.image = action.payload.image
-        }
       }
     }
   }
 )
 
-export const {addProducts, deleteProducts, updateProducts} = productSlice.actions
+export const {addProducts, deleteProducts} = productSlice.actions
 export const productReducer = productSlice.reducer
