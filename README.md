@@ -1,4 +1,4 @@
-# Simple Store App
+# Redux Toolkit Store App
 
 This is a simple store application built using React and Redux. It allows users to browse products, add them to the cart, and manage the cart contents.
 
