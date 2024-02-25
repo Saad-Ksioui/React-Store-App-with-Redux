@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { decreaseItem, getTotal, increaseItem, removeFromCart } from './cartSlice'
+import { decreaseItem, getTotal, increaseItem, removeFromCart } from '../features/cart/cartSlice'
 
 const Cart = () => {
   const { cart, totalQuantity, totalPrice } = useSelector(state => state.cart)

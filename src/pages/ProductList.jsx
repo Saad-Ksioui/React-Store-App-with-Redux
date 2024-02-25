@@ -1,7 +1,7 @@
 
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart } from "../cart/cartSlice";
-import { deleteProducts } from "./productSlice";
+import { addToCart } from "../features/cart/cartSlice";
+import { deleteProducts } from "../features/products/productSlice";
 
 const ProductList = () => {
   const dispatch = useDispatch()
